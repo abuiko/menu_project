@@ -1,0 +1,103 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2fcff;
+}
+
+h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.menu {
+  max-width: 1440px;
+  margin: auto;
+  text-align: center;
+  padding: 4rem 0rem;
+}
+
+.title {
+  padding: 2rem 0rem;
+  margin-bottom: 3rem;
+}
+
+.underline {
+  margin: auto;
+  width: 100px;
+  height: 2px;
+  background: #242424;
+}
+
+.section-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu-item {
+  width: 450px;
+  border: 1px solid #182849;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.menu-item .photo {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.menu-item .item-info {
+  width: 50%;
+  padding: 0rem 1rem;
+}
+
+.menu-item .item-info header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+.menu-item .item-info header h4 {
+  font-size: 0.9rem;
+}
+
+.menu-item .item-info p {
+  text-align: left;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=styles.css.map */
