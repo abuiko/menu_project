@@ -32,7 +32,6 @@ h2 {
 
 .title {
   padding: 2rem 0rem;
-  margin-bottom: 3rem;
 }
 
 .underline {
@@ -40,6 +39,32 @@ h2 {
   width: 100px;
   height: 2px;
   background: #242424;
+}
+
+.btn-container {
+  margin-bottom: 3rem;
+}
+
+.btn-container button {
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-container button:hover {
+  background: #272727;
+  color: #fff;
+}
+
+.btn-container button:focus {
+  border: 2px solid #000;
+}
+
+.btn-container button:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .section-center {

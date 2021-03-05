@@ -31,7 +31,7 @@ h2 {
 
 .title {
     padding: 2rem 0rem;
-    margin-bottom: 3rem;
+    // margin-bottom: 1.5rem;
 
 }
 
@@ -40,6 +40,32 @@ h2 {
     width: 100px;
     height: 2px;
     background: rgb(36, 36, 36);
+}
+
+.btn-container {
+    margin-bottom: 3rem;
+
+    button {
+        background: transparent;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+
+        &:hover {
+            background: rgb(39, 39, 39);
+            color: #fff;
+        }
+
+        &:focus {
+            border: 2px solid #000;
+        }
+
+        &:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+    }
 }
 
 .section-center {
