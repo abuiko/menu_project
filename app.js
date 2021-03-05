@@ -87,10 +87,13 @@ const menu = [
 
 ]
 
+
+
 window.addEventListener('DOMContentLoaded', () => {
+    const sectionCenter = document.querySelector('.section-center');
     let displayMenu = menu.map(item => {
         return `<article class="menu-item">
-       <img src=${item.img} class="photo" alt="toast">
+       <img src=${item.img} class="photo" alt="${item.img}">
 
        <div class="item-info">
            <header>
@@ -103,5 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
    </article>`
     })
 
-    console.log(displayMenu);
+    displayMenu = displayMenu.join('');
+    sectionCenter.innerHTML = displayMenu;
+    console.log(sectionCenter);
 })
