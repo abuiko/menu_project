@@ -6,7 +6,9 @@ const menu = [
         img: './img/croissant.jpg',
         price: '8.99$',
         category: 'breakfast',
-        info: ''
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse autem dolorum exercitationem'
+
+
     },
     {
         id: 2,
@@ -14,7 +16,8 @@ const menu = [
         img: './img/cupcake.jpg',
         price: '5.69$',
         category: 'breakfast',
-        info: ''
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse autem dolorum exercitationem'
+
     },
     {
         id: 3,
@@ -22,7 +25,8 @@ const menu = [
         img: './img/pasta.jpg',
         price: '17.99$',
         category: 'dinner',
-        info: ''
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse autem dolorum exercitationem'
+
     },
     {
         id: 4,
@@ -30,7 +34,9 @@ const menu = [
         img: './img/salad.jpg',
         price: '10.29$',
         category: 'lunch',
-        info: ''
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse autem dolorum exercitationem'
+
+
     },
     {
         id: 5,
@@ -38,7 +44,8 @@ const menu = [
         img: './img/salad2.jpg',
         price: '12.59$',
         category: 'lunch',
-        info: ''
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse autem dolorum exercitationem'
+
     },
     {
         id: 6,
@@ -46,7 +53,8 @@ const menu = [
         img: './img/soup.jpg',
         price: '4.99$',
         category: 'lunch',
-        info: ''
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse autem dolorum exercitationem'
+
     },
 
     {
@@ -55,7 +63,8 @@ const menu = [
         img: './img/steak.jpg',
         price: '20.99$',
         category: 'dinner',
-        info: ''
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse autem dolorum exercitationem'
+
     },
     {
         id: 8,
@@ -63,7 +72,8 @@ const menu = [
         img: './img/toast.jpg',
         price: '4.99$',
         category: 'breakfast',
-        info: ''
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse autem dolorum exercitationem'
+
     },
     {
         id: 9,
@@ -71,7 +81,27 @@ const menu = [
         img: './img/bowl.jpg',
         price: '11.99$',
         category: 'lunch',
-        info: ''
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse autem dolorum exercitationem'
+
     },
 
 ]
+
+window.addEventListener('DOMContentLoaded', () => {
+    let displayMenu = menu.map(item => {
+        return `<article class="menu-item">
+       <img src=${item.img} class="photo" alt="toast">
+
+       <div class="item-info">
+           <header>
+               <h4>${item.title}</h4>
+               <h4 class="price">${item.price}</h4>
+           </header>
+           <p class="item-text">${item.info}         
+           </p>
+       </div>
+   </article>`
+    })
+
+    console.log(displayMenu);
+})
