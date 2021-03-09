@@ -88,10 +88,11 @@ const menu = [
 ]
 
 const sectionCenter = document.querySelector('.section-center');
-
+const filterBtn = document.querySelectorAll('.btn-filter');
 
 window.addEventListener('DOMContentLoaded', () => {
     displayMenuItems(menu);
+    filterMenu(menu);
 });
 
 function displayMenuItems(menuItems) {
@@ -113,4 +114,22 @@ function displayMenuItems(menuItems) {
 
     displayMenu = displayMenu.join('');
     sectionCenter.innerHTML = displayMenu;
+}
+
+
+function filterMenu(menuItems) {
+    filterBtn.forEach(btn => btn.addEventListener('click', () => {
+        if (btn.innerText === "Breakfast") {
+            let result = menuItems.filter(item => item.category === 'breakfast');
+            displayMenuItems(result);
+        } else if (btn.innerText === 'Lunch') {
+            let result = menuItems.filter(item => item.category === 'lunch');
+            displayMenuItems(result);
+        } else if (btn.innerText === 'Dinner') {
+            let result = menuItems.filter(item => item.category === 'dinner');
+            displayMenuItems(result);
+        } else {
+            displayMenuItems(menu);
+        }
+    }))
 }
